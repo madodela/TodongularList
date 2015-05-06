@@ -3,4 +3,4 @@
 	Dependecies: none... yet
 */
 
-angular.module('TodoList', []);
+angular.module('TodoApp', []);
