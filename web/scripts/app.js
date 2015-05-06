@@ -3,4 +3,5 @@
 	Dependecies: none... yet
 */
 
-angular.module('TodoApp', []);
+//Injecting "TodoList" module using dependency injection
+angular.module('TodoApp', ['TodoList']);
