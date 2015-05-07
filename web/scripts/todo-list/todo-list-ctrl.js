@@ -1,12 +1,10 @@
 angular.module('TodoList')
-	.controller('todoListCtrl', ['$scope', //Injecting $scope object
-		function ($scope) {
+	.controller('todoListCtrl', ['$scope', '$http',//Injecting $scope object
+		function ($scope, $http) {
+			//$http is used to fetch data from the backend
+			$http.get('data/activities.json').success(function (response) {
 			/*$scope is the "glue" between the controller and the view*/
-			$scope.activities = [
-				'Read more books',
-				'Go to run',
-				'Sweep the house',
-				'Pack my bags'
-			];
+				$scope.activities = response;				;
+			});
 		}
 	]);

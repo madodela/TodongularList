@@ -12,16 +12,18 @@
 		
 		<div ng-controller="todoListCtrl">
 			<!-- Everything between double curls it's called an expression, it means that binding is being done -->
-			<h3>You have {{activities.length}} thing to do</h3>
+			<h3>You have {{activities.length}} things to do</h3>
 
 			<ul>
-				<li ng-repeat="thing in activities">{{thing}}</li>
+				<li ng-repeat="task in activities">{{task.title}}</li>
 			</ul>
 
 		</div>
 		<!-- Modules -->
 		<script src="scripts/app.js"></script>
 		<script src="scripts/todo-list/todo-list.js"></script>
+
+		<!-- Controllers -->
 		<script src="scripts/todo-list/todo-list-ctrl.js"></script>
 
 	</body>
