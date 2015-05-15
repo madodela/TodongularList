@@ -4,4 +4,4 @@
 */
 
 //Injecting "TodoList" module using dependency injection
-angular.module('TodoApp', ['TodoList']);
+angular.module('TodoApp', ['ngRoute', 'TodoList']);

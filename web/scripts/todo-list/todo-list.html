@@ -1,0 +1,7 @@
+<h1>My to do list</h1>
+<!-- Everything between double curls it's called an expression, it means that binding is being done -->
+<h3>You have {{activities.length}} things to do</h3>
+
+<ul>
+	<li ng-repeat="task in activities">{{task.title}}</li>
+</ul>
