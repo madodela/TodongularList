@@ -1,6 +1,6 @@
 /***** Todo List module *****/
 
-angular.module('TodoList', [])
+angular.module('TodoList', ['taskMod'])
 	.config(['$routeProvider', function ($routeProvider) {
 		$routeProvider
 			.when('/todo', {

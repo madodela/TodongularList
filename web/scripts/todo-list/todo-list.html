@@ -3,5 +3,7 @@
 <h3>You have {{activities.length}} things to do</h3>
 
 <ul>
-	<li ng-repeat="task in activities">{{task.title}}</li>
+	<li ng-repeat="task in activities">
+		<a href="#/task/{{task.id}}">{{task.title}}</a>
+	</li>
 </ul>
